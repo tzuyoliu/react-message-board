@@ -1033,7 +1033,7 @@
     "humps" "^2.0.1"
     "prop-types" "^15.5.10"
 
-"@grpc/grpc-js@^1.0.0":
+"@grpc/grpc-js@^1.0.0", "@grpc/grpc-js@^1.13.4":
   "integrity" "sha512-GsFaMXCkMqkKIvwCQjCrwH+GHbPKBjhwo/8ZuUkWHqbI73Kky9I+pQltrlT0+MWpedCoosda53lgjYfyEPgxBg=="
   "resolved" "https://registry.npmjs.org/@grpc/grpc-js/-/grpc-js-1.13.4.tgz"
   "version" "1.13.4"
