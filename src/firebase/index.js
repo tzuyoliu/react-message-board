@@ -1,22 +1,19 @@
-import { initializeApp } from 'firebase/app';
-import { getDatabase, ref } from 'firebase/database';
-import {
-  getAuth,
-  GithubAuthProvider,
-  browserLocalPersistence
-} from 'firebase/auth';
+// src/firebase/index.js
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
 
-import { firebaseCredentials } from '~/credentials';
-
-const app = initializeApp(firebaseCredentials);
-
-// database
-export const database = getDatabase(app);
-export const messagesDB = ref(database, 'messages');
-
-// auth
-export const auth = getAuth(app);
-export const providers = {
-  github: new GithubAuthProvider(),
+// ✅ 這邊是你的 Firebase 設定
+const firebaseConfig = {
+  apiKey: "AIzaSyDfVlK9ov5eGei1FI0NV_cXBqckLQqg3bo",
+  authDomain: "space-message-board.firebaseapp.com",
+  projectId: "space-message-board",
+  storageBucket: "space-message-board.firebasestorage.app",
+  messagingSenderId: "750121910222",
+  appId: "1:750121910222:web:7dc79e5657d75b354ab59f"
 };
-export const persistances = browserLocalPersistence;
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+// Export Firestore
+export const db = getFirestore(app);

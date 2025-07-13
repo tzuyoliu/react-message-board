@@ -8,11 +8,12 @@
   },
   "dependencies": {
     "@craco/craco": "^5.2.4",
+    "@firebase/app": "^0.6.30",
+    "@firebase/firestore": "^2.3.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
     "@fortawesome/free-brands-svg-icons": "^5.9.0",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "@types/prop-types": "^15.7.1",
-    "firebase": "^9.22.2",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
