@@ -35,9 +35,6 @@
     "prettier": "^1.18.2",
     "react-test-renderer": "^16.8.6"
   },
-  "overrides": {
-    "grpc": null
-  },
   "scripts": {
     "dev": "run-p --race dev:firebase dev:react",
     "dev:firebase": "firebase serve -p 4000",
