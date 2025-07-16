@@ -1,6 +1,7 @@
 // src/firebase/index.js
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
 
 // ✅ 這邊是你的 Firebase 設定
 const firebaseConfig = {
@@ -17,3 +18,4 @@ const app = initializeApp(firebaseConfig);
 
 // Export Firestore
 export const db = getFirestore(app);
+export const auth = getAuth(app);

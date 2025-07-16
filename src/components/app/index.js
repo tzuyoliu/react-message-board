@@ -2,12 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 import { Provider } from 'react-redux'
 
-import MessageForm from '~/components/message-form'
-import MessagesList from '~/components/messages-list'
-import Title from '~/components/shared/title'
-import Observation from '~/components/shared/observation'
-import store from '~/store'
-import { theme } from '~/constants'
+import MessageForm from '../message-form'
+import MessagesList from '../messages-list'
+import Title from '../shared/title'
+import Observation from '../shared/observation'
+import store from '../../store/index'
+import { theme } from '../../constants/index'
 
 const Wrapper = styled.div`
     background-color: #fff;

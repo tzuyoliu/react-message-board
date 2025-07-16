@@ -25,3 +25,5 @@ yarn-error.log*
 # my stuff
 **/*/credentials
 firebase-debug.log
+# Local Netlify folder
+.netlify

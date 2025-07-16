@@ -1,15 +1,15 @@
-import React, { useState, useEffect, useRef } from 'react'
+  import React, { useState, useEffect, useRef } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import PropTypes from 'prop-types'
 
-import Button from '~/components/shared/button'
-import TextInput from '~/components/shared/textinput'
-import UserInfo from '~/components/user-info'
-import actions from '~/actions'
-import { theme } from '~/constants'
-import { auth } from '~/firebase'
+import Button from '../shared/button'
+import TextInput from '../shared/textinput'
+import UserInfo from '../user-info'
+import actions from '../../actions'
+import { theme } from '../../constants/index'
+import { auth } from '../../firebase/index'
 
 import {
     ButtonText,
